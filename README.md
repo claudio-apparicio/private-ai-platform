@@ -16,3 +16,7 @@ Plataforma de IA privada: chat con documentos propios, con citas a la fuente, qu
 - `docs/operations/` — operación y puesta en marcha.
 - `docs/sprint-log/` — evidencia de cada tarea del sprint.
 - `scripts/` — utilidades de desarrollo.
+
+## Licencia
+
+Apache 2.0. Ver [LICENSE](LICENSE) y la decisión en [ADR-0008](docs/architecture/adr/0008-licencia.md).

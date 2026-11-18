@@ -31,4 +31,4 @@ Los ADR de este proyecto viven en esta carpeta, un archivo por decisión.
 | [0005](0005-registro-de-uso.md) | Registro de uso propio en PostgreSQL; Langfuse se evalúa en el Sprint 5 | Propuesta |
 | [0006](0006-repositorios.md) | Repositorio público para el producto y privado para el negocio | Aceptada |
 | [0007](0007-entorno-de-desarrollo.md) | Entorno de desarrollo: Windows nativo con Python 3.14, Docker Desktop y Cursor | Aceptada |
-| 0008 | Licencia del repositorio público | Pendiente |
+| [0008](0008-licencia.md) | Licencia Apache 2.0 para el repositorio público | Aceptada |
