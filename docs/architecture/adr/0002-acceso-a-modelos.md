@@ -21,7 +21,7 @@ Vender "IA privada" usando APIs de terceros es una contradicción si no se dice 
 Se propone la opción 3.
 
 - El backend habla un solo formato. La URL base, la clave y el nombre del modelo salen de la configuración.
-- OpenRouter se usa con retención cero activada y tope de gasto de USD 30 por mes. Se configura y se verifica en MOD-1.
+- OpenRouter se usa con retención cero activada y tope de gasto de hasta USD 30 por mes. La clave de desarrollo arranca con un tope de USD 10 por mes. Configurado y verificado en MOD-1 ([sprint-log](../../sprint-log/2026-11-25-mod-1-primer-modelo.md)).
 - Ollama cubre el nivel local (MOD-4).
 - LiteLLM queda diferido. Las APIs directas de cada proveedor se usan solo si un cliente lo pide.
 
@@ -44,4 +44,5 @@ El producto declara tres niveles de privacidad y nunca llama privado a un nivel 
 - **A favor:** comparar modelos es trivial y el código no depende de ningún proveedor.
 - **En contra:** OpenRouter es un intermediario más que ve el tráfico del nivel 1. Como el formato es estándar, salir de OpenRouter es cambiar la URL base y la clave.
 - **En contra:** las funciones propias de cada proveedor que no existen en el formato común quedan afuera.
+- **En contra:** desde el 18/10/2026 Google exige Safety Retention (el proveedor puede guardar pedidos solo para prevenir abusos), y OpenAI la va a exigir cuando Azure deje de ofrecer ZDR. Con "ZDR only", el nivel 1 queda limitado a Anthropic por Bedrock y Vertex y a modelos de pesos abiertos en proveedores con ZDR. En MOD-2 se decide si algún grupo admite Safety Retention y cómo se le explica al cliente.
 - **Pendiente:** LiteLLM se reconsidera, con versión fijada, cuando hagan falta presupuestos y claves por cliente.

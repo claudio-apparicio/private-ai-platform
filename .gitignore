@@ -12,6 +12,9 @@ __pycache__/
 .env.*
 !.env.example
 
+# Mediciones locales. En MOD-3 pasan a PostgreSQL.
+data/runs/
+
 # Node
 node_modules/
 dist/
